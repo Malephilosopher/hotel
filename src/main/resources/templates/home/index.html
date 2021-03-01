@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>Home</title>
+<link href='http://fonts.useso.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--header starts-->
+<div class="header">
+	 <div class="top-header">
+		 <div class="container">
+			 <div class="logo">
+				 	<a href="index"><img src="images/11.png"/></a>
+			 </div>
+			 <span class="menu"> </span>
+			 <div class="m-clear"></div>
+			 <div class="top-menu">
+				<ul>
+					 <li class="active"><a href="index">房间·链</a></li>
+					 <li><a class="scroll" href="conference">攻略分享·链</a></li>
+					 <li><a class="scroll" href="booking">用户预定·链</a></li>
+					 <li><a class="scroll" href="contact">反馈·链</a></li>
+				</ul>
+				<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle(200);
+					});
+				</script>
+			 </div>
+			 <div class="clearfix"></div>
+		  </div>
+	  </div>
+	  <div class="banner">
+			<div class="banner-info text-center">
+			<h3><label>您好</label> 链游酒店为您服务</h3>
+			<h1>链游</h1>
+			<span></span>
+			<ul>
+			 <li><a class="scroll" href="#">保护隐私</a><i class="line"></i></li>
+			 <li><a class="scroll" href="#">处理旅游纠纷更高效</a><i class="line2"></i></li>
+			 <li><a class="scroll" href="#">信誉管理</a></li>
+			 <div class="clearfix"></div>
+			</ul>
+			</div>
+	  </div>
+</div>
+<!---strat-date-piker---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+		  <script>
+				  $(function() {
+				    $( "#datepicker,#datepicker1" ).datepicker();
+				  });
+		  </script>
+<!---/End-date-piker---->
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+<script type="text/javascript" src="js/JFCore.js"></script>
+<script type="text/javascript" src="js/JFForms.js"></script>
+<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+<script type="text/javascript">
+	(function() {
+		JC.init({
+			domainKey: ''
+		});
+	})();
+</script>
+<div class="online_reservation">
+		   <div class="b_room">
+			  <div class="booking_room">
+				  <div class="reservation">
+					  <ul>				
+						 <li  class="span1_of_1 left">
+							 <h5>入住</h5>
+							 <div class="book_date">
+								 <form>
+								 <input class="date" id="datepicker" type="text" value="2/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}">
+								 </form>
+							 </div>					
+						 </li>
+						 <li  class="span1_of_1 left">
+							 <h5>离开</h5>
+							 <div class="book_date">
+							 <form>
+								<input class="date" id="datepicker1" type="text" value="22/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '22/08/2013';}">
+							 </form>
+						     </div>		
+						 </li>
+						 <li class="span1_of_1">
+							 <h5>房间类型</h5>
+							 <!----------start section_room----------->
+							 <div class="section_room">
+							      <select id="country" onchange="change_country(this.value)" class="frm-field required">
+										<option value="null">服务评级机制五星</option>
+										<option value="null">服务评级机制四星</option>  
+									  	<option value="null">服务评级机制三星</option>
+									  	<option value="null">服务评级机制二星</option>
+										<option value="AX">民宿</option>
+										<option value="AX">青旅</option>
+							      </select>
+							 </div>	
+						 </li>
+						 <li class="span1_of_3">
+								<div class="date_btn">
+									<form>
+										<input type="submit" value="实时价格" />
+									</form>
+								</div>
+						 </li>
+						 <div class="clearfix"></div>
+					 </ul>
+				 </div>
+			  </div>
+				<div class="clearfix"></div>
+		  </div>
+	  </div>
+</div>
+<!---->
+<div class="package text-center">
+	 <div class="container">
+		 <h3>链游—构建智能合约和完善的仲裁机制充分保证商家和消费者权益</h3>
+		 <p>利用区块链技术充分解决传统旅游行业中诚信、监管问题，用户申诉效率低下和高额中介费等：防止信息被篡改、对公共信息透明化，对个人信息通过非对称加密技术和哈希算法加密、利用POA技术保障双边信用。</p>
+		<!-- requried-jsfiles-for owl -->
+				<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+			<!-- //requried-jsfiles-for owl -->
+		  <div id="owl-demo" class="owl-carousel">
+			  <div class="item text-center image-grid">	
+					<ul>
+					 <li><img src="images/timg13.jpg" alt=""></li>			    
+					 <li><img src="images/u=2076418902,2622144555&fm=26&gp=0.jpg" alt=""></li>				 
+					 <li><img src="images/u=3230970337,16938597&fm=26&gp=0.jpg" alt=""></li>
+					 </ul>
+			  </div>
+			  <div class="item text-center image-grid">	
+					<ul>
+					<li> <img src="images/u=3068136865,1585567864&fm=26&gp=0.jpg" alt=""></li>			    
+					 <li><img src="images/timg11.jpg" alt=""></li>				 
+					 <li><img src="images/u=3034755661,198677771&fm=26&gp=0.jpg" alt=""></li>
+					 </ul>
+			  </div>
+			  <div class="item text-center image-grid">	
+					<ul>
+					<li> <img src="images/u=2244719578,823198163&fm=26&gp=0.jpg" alt=""></li>			    
+					 <li><img src="images/u=3738496970,3577363737&fm=26&gp=0.jpg" alt=""></li>				 
+					 <li><img src="images/u=2390256003,2321210012&fm=26&gp=0.jpg" alt=""></li>
+					 </ul>
+			  </div>
+		  </div> 		
+	 </div>
+</div>
+<!---->
+<!---->
+<div class="rooms text-center">
+	 <div class="container">
+		 <h3>房间类型</h3>
+		 <div class="room-grids">
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg.jpg" alt=""/>
+				 <h4>服务评级机制五星</h4>
+				 <p>基于评分上链对商户进行评级的信誉分排列<br><h5>旅游酒店最高等级</h5></p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg1.jpg" alt=""/>
+				 <h4>服务评级机制四星</h4>
+				 <p>基于评分上链对商户进行评级的信誉分排列<br><h5>旅游酒店较高等级</h5></p>
+				 <div class="items">					
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg2.jpg" alt=""/>
+				 <h4>服务评级机制三星</h4>
+				 <p>基于评分上链对商户进行评级的信誉分排列<br><h5>旅游酒店中级偏上等级</h5></p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg3.jpg" alt=""/>
+				 <h4>服务评级机制二星</h4>
+				 <p>基于评分上链对商户进行评级的信誉分排列<br><h5>旅游酒店中级等级</h5></p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg5.jpg" alt=""/>
+				 <h4>民宿</h4>
+				 <p>基于评分上链，优中选优<br><h5>独家真实攻略附赠</h5></p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/timg6.jpg" alt=""/>
+				 <h4>青旅</h4>
+				 <p>基于评分上链，安全监管保证<br><h5>便捷可靠舒适安心</h5></p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div class="fotter">
+	 <div class="container">
+		 <h3>以智能合约为核心的去中心化交易</h3>
+		 
+		 <i class="man"></i>
+	 </div>
+</div>
+<!---->
+<div class="fotter-info">
+	  <div class="container">
+	      <div class="col-md-5 details">
+			 <div class="hotel-info">
+				 
+			 </div>
+			 <div class="news">
+					
+			 </div>
+				<div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-7 details">
+			 <div class="join">
+				
+				
+			 </div>
+			 <div class="member">
+			 
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		 <div class="clearfix"></div>
+	  </div>
+		  
+</div>
+<!---->
+
+
+</body>
+</html>

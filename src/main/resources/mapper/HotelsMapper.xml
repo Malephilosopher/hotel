@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yihuanxu.mapper.HotelsMapper">
+
+    <resultMap id="baseMap" type="com.yihuanxu.hotel.entity.Hotels">
+        <id property="h_hotelName" column="h_hotelName" jdbcType="VARCHAR"/>
+        <result property="h_location" column="h_location" jdbcType="VARCHAR"/>
+        <result property="h_roomType" column="h_roomTpe" jdbcType="VARCHAR"/>
+        <result property="h_checkinDate" column="h_checkinDate" jdbcType="DATE"/>
+        <result property="h_checkoutDate" column="h_checkoutDate" jdbcType="DATE"/>
+        <result property="accident" column="accident" jdbcType="BOOLEAN"/>
+        <result property="price" column="price" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <!-- 查询所有 -->
+    <select id="findAll" resultType="com.yihuanxu.hotel.entity.Hotels">
+        SELECT * FROM hotel.h_hotel
+    </select>
+
+    <!-- 根据名称查询 -->
+    <select id="findByName" parameterType="String" resultMap="baseMap">
+        SELECT * FROM hotel.h_hotel WHERE hotelName = #{h_hotelName}
+    </select>
+
+    <!-- 添加数据 -->
+    <insert id="create" parameterType="com.yihuanxu.hotel.entity.Hotels">
+        INSERT INTO hotel.h_hotel(hotelName) VALUE(#{h_hotelName})
+    </insert>
+
+    <!-- 删除 -->
+    <delete parameterType="String" id="h_hotelName">
+        DELETE FROM hotel.h_hotel WHERE hotelName = #{h_hotelName}
+    </delete>
+
+</mapper>
+
